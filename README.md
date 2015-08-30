@@ -7,7 +7,7 @@ PS4CLIENT FOR PC/MAC
  
   ps4client is a host tool providing host fileio system for PS4. It is the same method that we used in ps2dev days, so basically it is the same protocol than ps2link and ps2client have been using since 2003.
   
-  It provide all io request operation availables on ps4link library. Now command are not implemented but it can be easily incorporated.
+  It provide all io request operation availables on ps4link library. Now commands are not implemented but it can be easily incorporated.
   
   By now only osx confirmed to run fine. 
   
@@ -37,14 +37,13 @@ PS4CLIENT FOR PC/MAC
  Sample is showing only open, read , write and directory entry list operations, you have full io r/w access to your hard disk
  
  ```
- ./psp2client -h yourps4ip listen
+ ./ps4client -h yourps4ip listen
  Client connected from xxx.xxx.xxx.xxx port: 49859
   Client reconnected
  sock ps4link_fileio set 86 connected 1
  Waiting for connection
  ps4link initialized and connected from pc/mac
  file open req (host0:/usr/local/ps4dev/test.txt, 0 0)
- aqui
  Opening /usr/local/ps4dev/test.txt flags 0
  Open return 5
  file open reply received (ret 5)
@@ -59,7 +58,6 @@ PS4CLIENT FOR PC/MAC
  ps4link_file: file close req (fd: 5)
  ps4link_close_file: close reply received (ret 0)
  file open req (host0:/usr/local/ps4dev/test1.txt, 101 0)
- aqui
  Opening /usr/local/ps4dev/test1.txt flags 601
  Open return 5
  file open reply received (ret 5)
