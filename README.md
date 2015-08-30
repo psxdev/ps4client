@@ -28,7 +28,7 @@ PS4CLIENT FOR PC/MAC
  2) Run sample provided in ps4link in your PS4, after run html button is freezed waiting connection from ps4client, so run in your computer;
    
   ```
-  psp2client -h ipofyourvita listen 
+  psp2client -h ipofyourps4 listen 
   ```
   
  
